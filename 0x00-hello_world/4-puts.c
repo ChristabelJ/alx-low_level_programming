@@ -1,8 +1,9 @@
 #include<stdio.h>
 /**
- * main - print the string using the put function
- * Description - in the main function
- * my program outputs "Programming is like building a multilingual puzzle"
+ * main - the string is printed in the put function
+ * Description: in the main function
+ * the program outputs "Programming is like building a multilingual puzzle"
+ * Return: 0
  */
 int main(void)
 {	
