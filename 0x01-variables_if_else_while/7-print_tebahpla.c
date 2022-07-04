@@ -9,6 +9,7 @@ int main(void)
 {
 	char letra = 'z';
 	char retorno = '\n';
+
 	while (letra >= 'a')
 	{
 		putchar (letra);
