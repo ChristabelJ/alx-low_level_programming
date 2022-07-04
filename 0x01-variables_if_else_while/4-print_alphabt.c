@@ -9,6 +9,7 @@ int main(void)
 {
 	char letra = 'a';
 	char retorno = '\n';
+
 	while (letra <= 'z')
 	{
 		if (letra != 'q' && letra != 'e')
