@@ -6,10 +6,10 @@
 #include <stdio.h>
 
 int main(void)
-{	
-	char minusculas = 'a';
+{	char minusculas = 'a';
 	char mayusculas = 'A';
 	char retorno = '\n';
+
 	while (minusculas <= 'z')
 	{
 		putchar (minusculas);
