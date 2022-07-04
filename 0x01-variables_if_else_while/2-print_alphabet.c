@@ -6,11 +6,11 @@
 #include <stdio.h>
 
 int main(void)
-
 {
 	char letra = 'a';
 	char retorno = '\n';
 	while (letra <= 'z')
+
 	{
 		putchar (letra);
 		letra++;
