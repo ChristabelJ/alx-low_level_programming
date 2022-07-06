@@ -1,17 +1,17 @@
-#include main.h  
+#include "main.h"
+#include <string.h>
 /**
  * main - check the code for main.h
  * Return: Always 0.
  */
 int main(void)
 {
-	char main[] = "Main";
+	const char str[] = "_putchar\n";
+	int len = strlen(str);
 	int i;
 
-	for (i = 0; main[i] != '\0'; i++)
-	{
-		_putchar(main[i]);
-	}
-	_putchar('\n');
+	for (i = 0; i < len; i++)
+
+	_putchar(str[i]);
 	return (0);
 }
