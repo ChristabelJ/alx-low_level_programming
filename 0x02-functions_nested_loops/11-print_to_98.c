@@ -1,4 +1,5 @@
 #include"main.h"
+#include <stdio.h>
 /**
  * print_to_98 - writes the character c to stdout
  * @n:xyz
