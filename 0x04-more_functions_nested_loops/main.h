@@ -1,5 +1,5 @@
 #ifndef HEADER_FILE
-#include <stdio.h>
+#define HEADER_FILE
 
 int _putchar(char c);
 void print_alphabet(void);
