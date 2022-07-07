@@ -1,4 +1,5 @@
 #include"main.h"
+#include <stdio.h>
 /**
  * times_table - writes the character c to stdout
  * Return: On success 1.
@@ -17,26 +18,23 @@ void times_table(void)
 			resultado = i * j;
 
 			if (resultado <= 9 && j != 0)
-			_putchar(' ');
-
+			{
+				_putchar(' ');
+			}
 			if (resultado > 9)
 			{
 				_putchar('0' + resultado / 10);
 				_putchar('0' + resultado % 10);
 			}
 			else
-			{
 				_putchar('0' + resultado % 10);
-
-				if (j == 9)
+			if (j == 9)
 				_putchar('\n');
-				else
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 	}
 }
-
