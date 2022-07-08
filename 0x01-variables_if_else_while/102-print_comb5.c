@@ -19,11 +19,11 @@ int main(void)
 				{
 					if ((c * 10) + d > (a * 10) + b)
 					{
-						if (coma == 0)
-						{
-							putchar(',');
-							putchar(32);
-						}
+					if (coma == 0)
+					{
+						putchar(',');
+						putchar(32);
+					}
 						putchar(a + '0');
 						putchar(b + '0');
 						putchar(32);
