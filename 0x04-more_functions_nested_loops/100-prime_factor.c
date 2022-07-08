@@ -2,6 +2,7 @@
 #include <math.h>
 /**
  * main - main funcion
+ *
  * Return: end program
  */
 int main(void)
@@ -21,6 +22,6 @@ int main(void)
 		a = c;
 	}
 	printf("%li\n", b);
-	
+
 	return (0);
-}	
+}
