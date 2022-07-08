@@ -1,34 +1,14 @@
 #include <stdio.h>
 /**
- * main - prints to string
- * Description: Prints "and that piece of art is useful.." without puts
- * Return: 1
+ * main - main function
+ *
+ * Return: end program
  */
-
-
-
 int main(void)
+{
+	char n[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-{	char *s = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-	long l = 59;
-
-       	long fd = 1;
-
-	long syscall = 1;
-
-	long ret = 0;
-
-	_asm_ ("syscall"
-
-			: "=a" (ret)
-
-			: "a" (syscall),
-
-			"D" (fd),
-
-			"S" (s),
-
-			"d" (l));
+	fprintf(stderr, "%s\n", n);
 
 	return (1);
+}
