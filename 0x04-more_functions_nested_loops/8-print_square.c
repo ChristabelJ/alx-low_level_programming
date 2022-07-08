@@ -21,5 +21,6 @@ void print_square(int size)
 			rows = orSize;
 		}
 	}
-	_putchar(10);
+	else
+		_putchar(10);
 }
