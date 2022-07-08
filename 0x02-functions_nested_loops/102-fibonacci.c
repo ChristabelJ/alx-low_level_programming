@@ -1,32 +1,22 @@
 #include <stdio.h>
-#include "main.h"
 /**
- * main - check the code for Holberton School students.
- * @int: parameter
- * Return: Always 0.
+ * main - main function
+ *
+ * Return: end program
  */
-int fibonacci(int);
-
 int main(void)
 {
-	int i, f;
+	long int n, a = 1, b = 1, s;
 
-	for (i = 1 ; i <= 50 ; i++)
+	printf("%ld", a);
+	for (n = 1; n < 50; ++n)
 	{
-		f = fibonacci(i);
-		printf ("%d ", f);
+		s = a + b;
+		printf(", %ld", s);
+		a = b;
+		b = s;
 	}
+	putchar(10);
+
 	return (0);
-}
-/**
- * fibonacci - check the code for Holberton School students.
- * @n: parameter
- * Return: Always 0.
- */
-int fibonacci(int n)
-{
-	if (n == 0 || n == 1)
-	return (n);
-	else
-	return (fibonacci(n - 1) + fibonacci(n - 2));
 }
