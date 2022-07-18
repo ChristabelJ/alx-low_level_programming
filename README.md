@@ -1,1 +1,1 @@
-I have started learning C programming
+even more pointers, arrays and strings
