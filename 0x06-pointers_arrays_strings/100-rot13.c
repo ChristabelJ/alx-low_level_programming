@@ -1,23 +1,22 @@
-int "main.h"
+#include "main.h"
 /**
- * rot13 - encodes a string using rot13.
- * @s: array of char
- * Description:  function that encodes a string using rot13.
- * Return: char string
+ * rot13 - rotate characters 13 places in the alphabet
+ * @s: string
+ * Return: string `s` rotated
  */
 char *rot13(char *s)
 {
-	char abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i, j;
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (i = 0; s[i] != '\0' ; i++)
+	for (i = 0; *(s + i); i++)
 	{
-		for (j = 0; abc[j] != '\0' ; j++)
+		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == abc[j])
+			if (a[j] == *(s + i))
 			{
-				s[i] = rot[j];
+				*(s + i) = b[j];
 				break;
 			}
 		}
